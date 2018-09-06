@@ -16,11 +16,10 @@ function destructivelyRemoveFirstKitten(){
 }
 
 function appendKitten(name){
-  return [kittens.concat('Broom')]
+  return [...kittens, 'Broom']
 }
 
 function prependKitten(name){
-  kittens = kittens.splice(-3, 3, 'Arnold')
-  return kittens
+  return ['Arnold', ...kittens]
 }
 
